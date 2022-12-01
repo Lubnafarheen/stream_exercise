@@ -29,9 +29,7 @@ public class StreamExercise {
     @Test
     public void task1(){
         List<Integer> integers = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
-
-        //todo: Write code here
-
+        integers.stream().forEach(System.out::println);
     }
 
     /**
@@ -40,8 +38,6 @@ public class StreamExercise {
     @Test
     public void task2(){
         long amount = 0;
-
-        //todo: Write code here
 
         assertEquals(10000, amount);
     }
