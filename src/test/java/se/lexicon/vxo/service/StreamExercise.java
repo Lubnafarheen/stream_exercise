@@ -37,8 +37,7 @@ public class StreamExercise {
      */
     @Test
     public void task2(){
-        long amount = 0;
-
+        long amount = people.stream().count();
         assertEquals(10000, amount);
     }
 
@@ -47,11 +46,8 @@ public class StreamExercise {
      */
     @Test
     public void task3(){
-        long amount = 0;
+        long amount = people.stream().filter(n -> n.getLastName().contains("Andersson")).count();
         int expected = 90;
-
-        //todo: Write code here
-
         assertEquals(expected, amount);
     }
 
